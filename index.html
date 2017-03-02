@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="jquery-2.2.4.js"></script>
+  <title>exercice 1</title>
+</head>
+<body>
+  <button type="button" name="button" id="click">bouton</button>
+  <p id="compte">0</p>
+  <script>
+  /*Construisez une page html avec un bouton et un champ texte
+  dans lequel on affiche le nombre de clics sur le bouton.*/
+  $(document).ready(function(){
+    var count = 0;//declaration de var
+    $('#click').click(function(){//lors du click
+      count = count + 1;//on utilise la var = var +1
+      $('#compte').text(count);//affiche la var dans le <p>
+    });
+  });
+  </script>
+</body>
+</html>
